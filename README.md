@@ -12,7 +12,7 @@ So what about it? This path has a "butterfly" shape and exhibits chaotic propert
 
 ## Compiling
 
-Under OSX, having Xcode installed.
+On linux:
 
 `$ make`
 
