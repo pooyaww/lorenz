@@ -8,7 +8,6 @@
  */
 
 #include <stdio.h>
-#include <OpenGL/gl.h>
 #include "vbo.h"
 
 GLuint vboId=0;

@@ -9,12 +9,8 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 
-#include <OpenGL/OpenGL.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/CGLDevice.h>
-#include <GLUT/glut.h>
-
-
+#define GL_GLEXT_PROTOTYPES
+#include <GL/glut.h>
 #include "vector.hpp"
 
 #include "drawing.h"
@@ -32,6 +28,7 @@
 
 #define NUM_SHOW 1000
 
+#define GL_GLEXT_PROTOTYPES
 // Camera
 double rotx = 0;
 double roty = 0;
@@ -73,7 +70,6 @@ extern Vector initial;
 extern double sigma;
 extern double b;
 extern double r;
-
 
 void fillVBO() {
 
@@ -546,8 +542,6 @@ void initGL(int width, int height) {
 	
 	// Vert sync
 	int swap_interval = 1;
-	CGLContextObj ctx = CGLGetCurrentContext();
-	CGLSetParameter(ctx, kCGLCPSwapInterval, &swap_interval);
 }
 
 int main(int argc, char** argv) {

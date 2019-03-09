@@ -6,7 +6,8 @@
  *  Copyright 2010 __MyCompanyName__. All rights reserved.
  *
  */
-
+#define GL_GLEXT_PROTOTYPES
+#include <GL/glut.h>
 // Location/Normals
 #define X_POS 0
 #define Y_POS 1

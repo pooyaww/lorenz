@@ -6,11 +6,8 @@
  *  Copyright 2010 __MyCompanyName__. All rights reserved.
  *
  */
-
-#include <OpenGL/OpenGL.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/CGLDevice.h>
-#include <GLUT/glut.h>
+#include <GL/gl.h>
+#include <GL/glut.h>
 #include "drawing.h"
 
 
